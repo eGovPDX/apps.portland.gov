@@ -12,7 +12,7 @@ Current apps:
 
 - Install the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) in VS Code.
 - Open this repository in [VS Code](https://code.visualstudio.com/).
-- When VS Code prompts you, build and start the dev container. If not, use Ctrl+Shift+P and search "open dev container".
+- After opening the repository, VS Code should build the dev container and prompt you to "Reopen in Container" in the bottom-right corner. If not, use Ctrl+Shift+P and search "Reopen in Container".
 
 ### 2. Install dependencies
 
@@ -33,15 +33,6 @@ pnpm dev
 
 Open the app at http://localhost:3000 (this URL should also be printed in your terminal after running the app).
 
-### Component Library
-
-```sh
-cd packages/portland-component-library
-# for development
-pnpm dev
-# for building the library
-pnpm build
-```
 ---
 
 ## Notes
