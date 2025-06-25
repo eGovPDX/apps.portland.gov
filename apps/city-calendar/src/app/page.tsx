@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Header, Footer } from "@cityofportland/component-library";
 import { Counter } from "@/components/counter";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -75,6 +76,7 @@ export default function Home() {
       />
       <h1>Welcome to the City Calendar</h1>
       <p>Your one-stop solution for all city events.</p>
+      <Link href="/events">View Events</Link>
       <Footer
         cityLogoUrl="https://egovpdx.github.io/portland-component-library/assets/PGOV-Logo-BH7su9hC.svg"
         generalInfoLinks={[
