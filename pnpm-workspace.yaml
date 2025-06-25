@@ -1,0 +1,7 @@
+storage:
+  dir: /usr/local/share/pnpm/store
+packages:
+  - "packages/**"
+  - "apps/**"
+  # exclude packages that are inside test directories
+  - "!**/test/**"
