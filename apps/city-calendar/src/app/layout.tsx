@@ -1,9 +1,9 @@
-import { Footer } from "@cityofportland/component-library";
 import type { Metadata } from "next";
 
-import "@cityofportland/component-library/style.css";
-import "./globals.css";
+import "../../../../packages/portland-component-library/src/styles/themes/pgov.css";
+import "../../../../packages/portland-component-library/dist/component-library.css";
 
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,9 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="pgov-theme-applied">
         <main>{children}</main>
-        <Footer />
       </body>
     </html>
   );
