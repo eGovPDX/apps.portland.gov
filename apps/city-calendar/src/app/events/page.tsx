@@ -7,7 +7,7 @@ export default async () => {
       { events.length > 0 ? (
         <ul>
           {events.map((event) => (
-            <li key={event.id} data-key={event.id}>
+            <li key={event.id} data-key={event.id} className={`event-item ${(event.id === "1" ? " highlight" : "")}`}>
               <h3>{event.title}</h3>
               <p>
                 <strong>When:</strong> {event.start.toLocaleString()} - {event.end.toLocaleString()}<br />
