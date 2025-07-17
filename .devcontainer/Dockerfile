@@ -15,6 +15,10 @@ FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:${VARIANT}
 # [Optional] Uncomment if you want to install more global node packages
 RUN su node -c "npm install -g pnpm"
 
+# Copy City of Portland certificate(s) into the container
+COPY certs/. /usr/local/share/ca-certificates/
+RUN cat /usr/local/share/ca-certificates/cop_ca.pem >> /etc/ssl/certs/ca-certificates.crt
+
 # This section sets up certificates for use on the corporate network
 ENV NODE_EXTRA_CA_CERTS=/etc/ssl/certs/ca-certificates.crt
 
